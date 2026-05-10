@@ -1,5 +1,5 @@
 {
-	"name": "simpleChat",
+	"name": "simplechat",
 	"version": "0.0.1",
 	"description": "web chat boilerplate with Node.js and Socket.io",
 	"dependencies": {
