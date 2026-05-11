@@ -11,7 +11,8 @@ app.get("/", function(req, res){
 	res.render("page");
 });
 
-var io = require('socket.io').listen(app.listen(port));
+var server = app.listen(port, "0.0.0.0");
+var io = require('socket.io').listen(server);
 
 io.sockets.on('connection', function (socket) {
 	socket.emit('message', { message: 'welcome to the chat' });
