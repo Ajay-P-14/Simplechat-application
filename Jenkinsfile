@@ -13,7 +13,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t nodejs-app:${BUILD_NUMBER} .'
+               sh 'docker build --no-cache -t nodejs-app:${BUILD_NUMBER} .'
             }
         }
 
